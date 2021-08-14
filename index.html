@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <!-- FONTAWESOME SCRIPT -->
+    <script src="https://kit.fontawesome.com/8b85b3b1ee.js" crossorigin="anonymous"></script>
+
+    <link href="assets/css/main.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro APP</title>
+</head>
+
+<body onload="template()">
+    <div id="titleContainer" class="container">
+        <h1 class="title">Pomodoro App</h1>
+    </div>
+
+    <div class="container timer">
+        <div class="row">
+            <div class="col-5">
+                <h4 id="minutes"></h4>
+            </div>
+            <div class="col-2">
+                <h4 id="">:</h4>
+            </div>
+            <div class="col-5">
+                <h4 id="seconds"></h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- start and reset buttons -->
+    <div class="container d-flex justify-content-center align-items-center">
+        <button onclick="start()" class="btn"><i class="fas fa-play"></i></button>
+        <a><i onclick="window.location.reload()" class="fas fa-retweet"></i></a>
+    </div>
+
+
+    <!-- input to define section name -->
+    <div class="container d-flex justify-content-center align-items-center">
+        <label class="label" for="fname">Nome da seção</label>
+        <input class="form-field" type="text" id="secao" name="firstname" placeholder="Seção">
+    </div>
+    
+    <!-- div to show mensage  -->
+    <div>
+        <h3 id="done" class="text-center my-5"></h3>
+    </div>
+    <br>
+
+    <!-- table  -->
+    <section class="tableSection">
+        <div class="tablediv">
+            <table id="table" class="table">
+                <thead class="center">
+                    <tr>
+                        <th>Usuário</th>
+                        <th>Nome da seção</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    
+
+
+
+
+
+    <script src="js/main.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
