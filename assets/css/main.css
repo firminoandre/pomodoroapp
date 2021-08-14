@@ -1,0 +1,82 @@
+body{
+    background-color: #192266;
+    font-family: 'Righteous', cursive;
+}
+
+.title{
+    color: white;
+}
+
+#titleContainer{
+    text-align: center;
+    padding-top: 35px;
+}
+
+.row{
+    width: 100%;
+}
+
+.timer{
+    margin-top: 35px;
+    text-align: center;
+    color: white;
+    width: 20rem;
+    height: 20rem;
+    border: 5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+i{
+    color: white;
+}
+
+.fa-play, .fa-retweet{
+    border: 2px solid transparent;
+    padding: 1rem;
+     
+}
+
+.fa-play:hover, .fa-retweet:hover{
+    border: 0.5px solid rgb(204, 204, 204);
+    
+}
+
+.showMsg{
+    
+    display: block;
+    padding: 1rem 0;
+    color: #4454d1;
+    background: white;
+    border-radius: 0.5rem;
+    transition: 0.5s ease;
+}
+
+.form-field {
+    height: 46px;
+    padding: 0 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Rubik', sans-serif;
+    outline: 0;
+    transition: .2s;
+    margin-top: 20px;
+  }
+
+  .label{
+      color: white;
+      margin-right: 30px;
+      margin-top: 24px;
+  }
+
+.tablediv{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.table{
+    color: white;
+}
+
