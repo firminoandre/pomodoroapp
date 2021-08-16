@@ -19,6 +19,20 @@ function mostrarValor() {
     document.getElementById("secao").value;
 }
 
+
+
+function verifyInput(){
+    var input = document.getElementById("secao").value;
+    if (input == ""){
+        alert("Preencha o campo de seção");
+        return;
+    }
+
+    start();
+}
+
+
+
 function start() {
     play.play();
     // define minutes and seconds to start
