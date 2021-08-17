@@ -1,7 +1,7 @@
 // create variable
 var minutes = 25;
 var seconds = "00";
-
+var jaFoiClicado = false; // começa com false pra poder ser clicado pela primeira vez
 
 // run sounds in every action
 var play = new Audio("assets/songs/run.mp3");
@@ -20,6 +20,14 @@ function mostrarValor() {
     document.getElementById("secao").value;
 }
 
+function clickButton(){
+    if(!jaFoiClicado){
+        verifyInput();
+        jaFoiClicado =  true;
+        return;
+    }
+    alert("Espere o tempo acabar");
+}
 
 
 function verifyInput(){
