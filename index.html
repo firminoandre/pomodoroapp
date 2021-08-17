@@ -25,32 +25,46 @@
         <h1 class="title">Pomodoro App</h1>
     </div>
 
-    <div class="container timer">
+    <div class="container glassContainer">
         <div class="row">
-            <div class="col-5">
-                <h4 id="minutes"></h4>
+            <div class="col-5 minuto">
+                <h1 id="minutes"></h1>
             </div>
-            <div class="col-2">
+            <div class="col-5 doisPontos">
                 <h4 id="">:</h4>
             </div>
-            <div class="col-5">
-                <h4 id="seconds"></h4>
+            <div class="col-5 minuto2">
+                <h1 id="seconds"></h1>
             </div>
         </div>
-    </div>
 
-    <!-- start and reset buttons -->
-    <div class="container d-flex justify-content-center align-items-center">
-        <button onclick="verifyInput()" class="btn"><i class="fas fa-play"></i></button>
-        <a><i onclick="window.location.reload()" class="fas fa-retweet"></i></a>
+        <!-- start and reset buttons -->
+        <div class="container d-flex justify-content-center align-items-center">
+            <button onclick="verifyInput()" class="btn"><i class="fas fa-play"></i></button>
+            <a><i onclick="window.location.reload()" class="fas fa-retweet"></i></a>
+        </div>
+    
+    
+        <!-- input to define section name -->
+        <div class="container d-flex justify-content-center align-items-center">
+            <label class="label" for="fname">Nome da seção</label>
+            <input class="form-field" type="text" id="secao" name="firstname" placeholder="Seção">
+        </div>
+    
+        <div class="container d-flex justify-content-center align-items-center">
+            <label class="label" for="fname">Selecione o tempo de sua seção</label>
+            <select class="form-select" id="select" onchange="opt()">
+                <option disabled selected>- Selecione -</option>
+                <option value="4">5 minutos</option>
+                <option value="9">10 minutos</option>
+                <option value="14">15 minutos</option>
+                <option value="19">20 minutos</option>
+                <option value="24">25 minutos</option>
+            </select>
+    
+        </div>
     </div>
-
-
-    <!-- input to define section name -->
-    <div class="container d-flex justify-content-center align-items-center">
-        <label class="label" for="fname">Nome da seção</label>
-        <input class="form-field" type="text" id="secao" name="firstname" placeholder="Seção">
-    </div>
+    
     
     <!-- div to show mensage  -->
     <div>

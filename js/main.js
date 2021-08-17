@@ -2,6 +2,7 @@
 var minutes = 25;
 var seconds = "00";
 
+
 // run sounds in every action
 var play = new Audio("assets/songs/run.mp3");
 var replay = new Audio("assets/songs/replay.mp3");
@@ -31,13 +32,17 @@ function verifyInput(){
     start();
 }
 
+function opt(){
+    optionSelect = document.getElementById("select").value;
+    console.log(optionSelect);
+}
 
 
 function start() {
     play.play();
     // define minutes and seconds to start
-    minutes = 24;
-    seconds = 59;
+    minutes = 00;
+    seconds = 02;
 
     document.getElementById("minutes").innerHTML = minutes;
     document.getElementById("seconds").innerHTML = seconds;

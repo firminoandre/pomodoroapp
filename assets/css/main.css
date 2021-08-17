@@ -1,5 +1,6 @@
+
 body{
-    background-color: #192266;
+    background-image: url(../img/ceu2.png);
     font-family: 'Righteous', cursive;
 }
 
@@ -70,6 +71,8 @@ i{
       margin-right: 30px;
       margin-top: 24px;
   }
+  
+
 
 .tablediv{
     margin-left: 25%;
@@ -78,5 +81,58 @@ i{
 
 .table{
     color: white;
+}
+
+.doisPontos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 25px;
+    height: 50px;
+    border-radius: 23px;
+    background: linear-gradient(145deg, #e6e6e6, #f7f7f7);
+    box-shadow:  9px 9px 50px #e3e3e3,
+                -9px -9px 50px #ffffff;
+}
+
+.glassContainer {
+    margin-top: 50px;
+    width: 700px;
+    height: 500px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 15.0px );
+    -webkit-backdrop-filter: blur( 15.0px );
+    border-radius: 10px;
+}
+
+.minuto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 21%;
+    margin-left: 25%;
+    width: 100px;
+    height: 100px;
+    border-radius: 23px;
+    background: linear-gradient(145deg, #e6e6e6, #f7f7f7);
+    box-shadow:  9px 9px 50px #e3e3e3,
+                -9px -9px 50px #ffffff;
+}
+
+.minuto2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 21%;
+    width: 100px;
+    height: 100px;
+    border-radius: 23px;
+    background: linear-gradient(145deg, #e6e6e6, #f7f7f7);
+    box-shadow:  9px 9px 50px #e3e3e3,
+                -9px -9px 50px #ffffff;
 }
 
