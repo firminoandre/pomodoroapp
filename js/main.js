@@ -41,8 +41,8 @@ function opt(){
 function start() {
     play.play();
     // define minutes and seconds to start
-    minutes = 00;
-    seconds = 02;
+    minutes = optionSelect;
+    seconds = 59;
 
     document.getElementById("minutes").innerHTML = minutes;
     document.getElementById("seconds").innerHTML = seconds;
