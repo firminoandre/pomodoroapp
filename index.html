@@ -16,6 +16,7 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro APP</title>
 </head>
@@ -53,8 +54,8 @@
     
         <div class="container d-flex justify-content-center align-items-center">
             <label class="label" for="fname">Selecione o tempo de sua seção</label>
-            <select class="form-select" id="select" onchange="opt()">
-                <option disabled selected>- Selecione -</option>
+            <select class="form-select" id="select" onchange="template()">
+                <option disabled selected>Selecione</option>
                 <option value="4">5 minutos</option>
                 <option value="9">10 minutos</option>
                 <option value="14">15 minutos</option>
