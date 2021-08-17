@@ -11,7 +11,34 @@ var finish = new Audio("assets/songs/finish.mp3");
 
 // insert visualy variable minutes and seconds in html
 function template() {
-    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("minutes").innerHTML = "00";
+    optionSelect = document.getElementById("select").value;
+    if(optionSelect == 4){
+        optionSelect = 5
+        document.getElementById("minutes").innerHTML = optionSelect;
+        return;
+    }
+    if(optionSelect == 9){
+        optionSelect = 10
+        document.getElementById("minutes").innerHTML = optionSelect;
+        return;
+    }
+    if(optionSelect == 14){
+        optionSelect = 15
+        document.getElementById("minutes").innerHTML = optionSelect;
+        return;
+    }
+    if(optionSelect == 19){
+        optionSelect = 20
+        document.getElementById("minutes").innerHTML = optionSelect;
+        return;
+    }
+    if(optionSelect == 24){
+        optionSelect = 25
+        document.getElementById("minutes").innerHTML = optionSelect;
+        return;
+    }
+    
     document.getElementById("seconds").innerHTML = seconds;
 
 }
@@ -40,9 +67,10 @@ function verifyInput(){
     start();
 }
 
+
 function opt(){
     optionSelect = document.getElementById("select").value;
-    console.log(optionSelect);
+    teste = optionSelect;
 }
 
 
@@ -52,7 +80,7 @@ function start() {
     minutes = optionSelect;
     seconds = 59;
 
-    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("minutes").innerHTML = minutes - 1;
     document.getElementById("seconds").innerHTML = seconds;
 
     var minutes_interval = setInterval(minutesTimer, 60000);
