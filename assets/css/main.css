@@ -67,6 +67,12 @@ i{
     transition: .2s;
     margin-top: 20px;
   }
+  
+  .aa{
+      margin-right: 22px;
+      margin-top: 10px;
+      width: 20%;
+  }
 
   .label{
       color: white;
@@ -105,7 +111,7 @@ i{
     width: 700px;
     height: 400px;
     background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
     backdrop-filter: blur( 15.0px );
     -webkit-backdrop-filter: blur( 15.0px );
     border-radius: 10px;
