@@ -8,7 +8,6 @@ var play = new Audio("assets/songs/run.mp3");
 var replay = new Audio("assets/songs/replay.mp3");
 var finish = new Audio("assets/songs/finish.mp3");
 
-
 // insert visualy variable minutes and seconds in html
 function template() {
     document.getElementById("minutes").innerHTML = "00";
@@ -47,7 +46,12 @@ function mostrarValor() {
     document.getElementById("secao").value;
 }
 
+
+//
+
 function clickButton(){
+    var div = document.getElementById("btnPause");
+    div.style.display = "none";
     if(!jaFoiClicado){
         verifyInput();
         jaFoiClicado =  true;
@@ -68,19 +72,14 @@ function verifyInput(){
 }
 
 
-function opt(){
-    optionSelect = document.getElementById("select").value;
-    teste = optionSelect;
-}
-
 
 function start() {
     play.play();
     // define minutes and seconds to start
-    minutes = optionSelect;
+    minutes = optionSelect - 1;
     seconds = 59;
 
-    document.getElementById("minutes").innerHTML = minutes - 1;
+    document.getElementById("minutes").innerHTML = minutes;
     document.getElementById("seconds").innerHTML = seconds;
 
     var minutes_interval = setInterval(minutesTimer, 60000);
