@@ -63,7 +63,7 @@ function clickButton(){
 
 function verifyInput(){
     var input = document.getElementById("secao").value;
-    if (input == ""){
+    if (input.length === 0 || !input.trim() ){
         alert("Preencha o campo de seção");
         return;
     }
