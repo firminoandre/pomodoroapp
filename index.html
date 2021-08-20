@@ -18,12 +18,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/livro.png">
     <title>Pomodoro APP</title>
 </head>
 
+
 <body onload="template()">
+    
     <div id="titleContainer" class="container">
         <h1 class="title">Pomodoro App</h1>
+        <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                class="fas fa-info-circle"></i></button>
+    </div>
+
+    <!-- Modal ALERT INPUT -->
+    <div class="modal fade" id="alertModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ATENÇÃO !!!</h5><i
+                        class="fab fa-leanpub"></i>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h5 id="textoo"> Preencha o nome de sua sessão para iniciar! </h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ALERT BUTTON -->
+    <div class="modal fade" id="alertModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ATENÇÃO !!!</h5><i
+                        class="fab fa-leanpub"></i>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                   Espere o tempo acabar para poder iniciar outra sessão!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">O que é a técnica do Pomodoro</h5><i
+                        class="fab fa-leanpub"></i>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Técnica Pomodoro ou método Pomodoro é um sistema de gerenciamento de tempo que incentiva as pessoas
+                    a focar de maneira intensa e integral em apenas uma tarefa ao longo de uma sessão determinada pelo
+                    usuário.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="container glassContainer">
@@ -45,14 +112,14 @@
             <div id="btnPause" class="btnPause"><button class="btn"><i class="fas fa-pause"></i></button></div>
             <a><i onclick="window.location.reload()" class="fas fa-retweet"></i></a>
         </div>
-    
-    
+
+
         <!-- input to define section name -->
         <div class="container d-flex justify-content-center align-items-center">
             <label class="label" for="fname">Nome da sessão</label>
             <input class="form-field" type="text" id="secao" name="firstname" placeholder="Nome da Sessão">
         </div>
-    
+
         <div class="container d-flex justify-content-center align-items-center">
             <label class="label" for="fname">Selecione o tempo da sua sessão</label>
             <select class="form-select aa" id="select" onchange="template()">
@@ -63,11 +130,11 @@
                 <option value="19">20 minutos</option>
                 <option value="24">25 minutos</option>
             </select>
-    
+
         </div>
     </div>
-    
-    
+
+
     <!-- div to show mensage  -->
     <div>
         <h3 id="done" class="text-center my-5"></h3>
@@ -76,7 +143,7 @@
 
     <!-- table  -->
     <section class="tableSection">
-        <div class="tablediv">
+        <div class="tablediv" id="tabelinha" style="display: none;">
             <table id="table" class="table">
                 <thead class="center">
                     <tr>
@@ -93,7 +160,7 @@
     </section>
 
 
-    
+
 
 
 
@@ -102,8 +169,8 @@
     <script src="js/main.js"></script>
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
